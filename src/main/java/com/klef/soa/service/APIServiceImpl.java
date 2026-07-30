@@ -21,7 +21,8 @@ public class APIServiceImpl implements APIService
 	public List<ProductDTO> displayAllProducts() 
 	{
 	   //Object[]  data =  template.getForObject(apiurl,Object[].class);
-		
+//		 getforObject returns object array .
+//		Object is used when we dont know the datatype .
 	     ProductDTO[] data = template.getForObject(apiurl,ProductDTO[].class);
 	     
 	     return Arrays.asList(data);
